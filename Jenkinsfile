@@ -8,6 +8,8 @@ node() {
          echo "end of stage prepare"
     }
     
-    
+    stage('build') {
+    mtaBuild script: this
+}
 
 }
